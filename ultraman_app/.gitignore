@@ -1,4 +1,3 @@
-/build
-app/build/
+ultraman_app/app/build/
 *.apk
 *.aab

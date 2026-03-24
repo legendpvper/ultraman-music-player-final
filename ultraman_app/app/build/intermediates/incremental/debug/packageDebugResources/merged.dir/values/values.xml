@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_light">#F5F5F5</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">#E53935</color>
+    <color name="colorCard">#16213E</color>
+    <color name="colorHighlight">#E53935</color>
+    <color name="colorPrimary">#0D0D1A</color>
+    <color name="colorPrimaryDark">#05050F</color>
+    <color name="colorSurface">#1A1A2E</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextSecondary">#B0BEC5</color>
+    <color name="notification_bg">#1A1A2E</color>
+    <color name="transparent">#00000000</color>
+    <color name="ultraman_blue">#0D47A1</color>
+    <color name="ultraman_dark">#05050F</color>
+    <color name="white">#FFFFFF</color>
+    <string name="all_series">All Series</string>
+    <string name="app_name">Ultraman Themes</string>
+    <string name="loading">Loading…</string>
+    <string name="next">Next</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="previous">Previous</string>
+    <string name="stop">Stop</string>
+    <string name="youtube_notice">Playing via YouTube</string>
+    <style name="Theme.UltramanThemes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="Theme.UltramanThemes.Player" parent="Theme.UltramanThemes">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

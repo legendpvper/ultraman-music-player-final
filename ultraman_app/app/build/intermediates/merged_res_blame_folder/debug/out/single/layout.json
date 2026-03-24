@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.ultraman.themes.app-mergeDebugResources-32:/layout/activity_player.xml",
+        "source": "com.ultraman.themes.app-main-35:/layout/activity_player.xml"
+    },
+    {
+        "merged": "com.ultraman.themes.app-mergeDebugResources-32:/layout/activity_main.xml",
+        "source": "com.ultraman.themes.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.ultraman.themes.app-mergeDebugResources-32:/layout/item_song.xml",
+        "source": "com.ultraman.themes.app-main-35:/layout/item_song.xml"
+    }
+]

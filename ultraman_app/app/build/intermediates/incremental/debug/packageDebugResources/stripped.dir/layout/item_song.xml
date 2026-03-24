@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/songCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Color Strip -->
+            <View
+                android:id="@+id/colorStrip"
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:minHeight="72dp"
+                android:background="@color/ultraman_blue" />
+
+            <!-- Track Number -->
+            <TextView
+                android:id="@+id/songNumber"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#999"
+                android:gravity="center"
+                android:text="01" />
+
+            <!-- Song Info -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    android:id="@+id/songTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="Song Title" />
+
+                <TextView
+                    android:id="@+id/songSeries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/ultraman_blue"
+                    android:layout_marginTop="2dp"
+                    android:text="Series Name" />
+
+                <TextView
+                    android:id="@+id/songArtist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="#888"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="Artist" />
+
+            </LinearLayout>
+
+            <!-- Year Badge -->
+            <TextView
+                android:id="@+id/songYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingEnd="12dp"
+                android:textSize="12sp"
+                android:textColor="#999"
+                android:text="1966" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
