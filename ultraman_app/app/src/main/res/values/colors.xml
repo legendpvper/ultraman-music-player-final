@@ -1,0 +1,17 @@
+<resources>
+    <color name="colorPrimary">#0D0D1A</color>
+    <color name="colorPrimaryDark">#05050F</color>
+    <color name="colorAccent">#E53935</color>
+    <color name="colorSurface">#1A1A2E</color>
+    <color name="colorCard">#16213E</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextSecondary">#B0BEC5</color>
+    <color name="colorHighlight">#E53935</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="notification_bg">#1A1A2E</color>
+    <color name="ultraman_blue">#0D47A1</color>
+    <color name="ultraman_dark">#05050F</color>
+    <color name="background_light">#F5F5F5</color>
+</resources>
