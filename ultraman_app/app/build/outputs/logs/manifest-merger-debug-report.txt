@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\0ac49f6341771b75f0a928230b32f190\transformed\jetified-viewbinding-8.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Reuben\.gradle\caches\transforms-3\eaf6cb842bf96a5d1b11db61b47f74be\transformed\material-1.11.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Reuben\.gradle\caches\transforms-3\8177fc0ae5949b09fa6ab8b305676505\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -49,32 +49,32 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\Reuben\.gradle\caches\transforms-3\041f4add30e80fb020c80f1480edcdce\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\342f635b838650e3491c8d1b5fea83ca\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:4:5-76
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:4:5-76
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:4:22-74
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:4:22-74
 uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:5:5-91
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:5:5-91
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:5:22-89
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:5:22-89
 uses-permission#android.permission.WAKE_LOCK
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:6:5-67
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:6:5-67
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:6:22-65
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:6:22-65
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:7:5-76
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:7:5-76
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:7:22-74
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:7:22-74
 application
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:9:5-37:19
-INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:9:5-37:19
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:9:5-47:19
+INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:9:5-47:19
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Reuben\.gradle\caches\transforms-3\eaf6cb842bf96a5d1b11db61b47f74be\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Reuben\.gradle\caches\transforms-3\eaf6cb842bf96a5d1b11db61b47f74be\transformed\material-1.11.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\Reuben\.gradle\caches\transforms-3\8177fc0ae5949b09fa6ab8b305676505\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -92,59 +92,75 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Reuben\.gradle\caches\transforms-3\406d807a7ce62df501812ba1c8fa845a\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Reuben\.gradle\caches\transforms-3\406d807a7ce62df501812ba1c8fa845a\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:14:9-35
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:12:9-41
 	android:hardwareAccelerated
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:16:9-43
 	android:roundIcon
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:13:9-54
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:15:9-52
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:15:9-52
 activity#com.ultraman.themes.ui.MainActivity
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:18:9-25:20
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:18:9-25:20
 	android:exported
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:20:13-36
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:19:13-44
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:19:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:21:13-24:29
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:21:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:22:17-68
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:22:17-68
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:22:25-66
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:23:17-76
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:23:17-76
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:23:27-74
 activity#com.ultraman.themes.ui.PlayerActivity
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:27:9-30:60
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:27:9-30:60
 	android:parentActivityName
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:30:13-58
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:30:13-58
 	android:exported
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:29:13-37
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:28:13-46
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:28:13-46
+activity#com.ultraman.themes.ui.SongListActivity
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:32:3-35:51
+	android:parentActivityName
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:35:4-49
+	android:exported
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:34:4-28
+	android:name
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:33:4-39
+activity#com.ultraman.themes.ui.QueueActivity
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:37:3-40:53
+	android:parentActivityName
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:40:4-51
+	android:exported
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:39:4-28
+	android:name
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:38:4-36
 service#com.ultraman.themes.service.MusicService
-ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:32:9-35:60
+ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:42:9-45:60
 	android:exported
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:44:13-37
 	android:foregroundServiceType
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:35:13-58
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:45:13-58
 	android:name
-		ADDED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml:33:13-49
+		ADDED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:43:13-49
 uses-sdk
-INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\0ac49f6341771b75f0a928230b32f190\transformed\jetified-viewbinding-8.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\0ac49f6341771b75f0a928230b32f190\transformed\jetified-viewbinding-8.2.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.11.0] C:\Users\Reuben\.gradle\caches\transforms-3\eaf6cb842bf96a5d1b11db61b47f74be\transformed\material-1.11.0\AndroidManifest.xml:20:5-44
@@ -234,9 +250,9 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Reuben\.gradle\caches\transfor
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\342f635b838650e3491c8d1b5fea83ca\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\342f635b838650e3491c8d1b5fea83ca\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Reuben\Downloads\ultraman_themes_android_mega_final\ultraman_app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Reuben\.gradle\caches\transforms-3\c3f432f8e29f60e3d52e5080e97a930f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:24:9-32:20

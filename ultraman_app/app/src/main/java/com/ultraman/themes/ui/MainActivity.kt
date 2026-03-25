@@ -10,7 +10,9 @@ import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.os.IBinder
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -21,6 +23,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ultraman.themes.R
 import com.ultraman.themes.databinding.ActivityMainBinding
 import com.ultraman.themes.model.SongRepository
+import com.ultraman.themes.model.UltramanCharacter
 import com.ultraman.themes.model.UltramanSong
 import com.ultraman.themes.service.MusicService
 
@@ -29,8 +32,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var musicService: MusicService? = null
     private var bound = false
-    private val songs = SongRepository.songs
-    private lateinit var adapter: SongAdapter
+    private val characters = SongRepository.characters
+    private lateinit var adapter: CharacterAdapter
 
     private val connection = object : ServiceConnection {
         override fun onServiceConnected(name: ComponentName, binder: IBinder) {
@@ -38,9 +41,7 @@ class MainActivity : AppCompatActivity() {
             bound = true
             refreshMiniPlayer()
         }
-        override fun onServiceDisconnected(name: ComponentName) {
-            bound = false
-        }
+        override fun onServiceDisconnected(name: ComponentName) { bound = false }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
-        supportActionBar?.title = "Ultraman Opening Themes"
+        supportActionBar?.title = "Ultraman Music Player"
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
             ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
@@ -57,12 +58,9 @@ class MainActivity : AppCompatActivity() {
                 arrayOf(Manifest.permission.POST_NOTIFICATIONS), 100)
         }
 
-        adapter = SongAdapter(songs) { song ->
-            val idx = songs.indexOf(song)
-            MusicService.currentIndex = idx
-            startMusicService(song.id)
-            startActivity(Intent(this, PlayerActivity::class.java)
-                .putExtra(MusicService.EXTRA_SONG_ID, song.id))
+        adapter = CharacterAdapter(characters) { character ->
+            startActivity(Intent(this, SongListActivity::class.java)
+                .putExtra(SongListActivity.EXTRA_SERIES, character.series))
         }
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
@@ -79,15 +77,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun startMusicService(songId: Int) {
-        val intent = Intent(this, MusicService::class.java).apply {
-            action = MusicService.ACTION_PLAY
-            putExtra(MusicService.EXTRA_SONG_ID, songId)
-        }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-            startForegroundService(intent) else startService(intent)
-    }
-
     override fun onStart() {
         super.onStart()
         bindService(Intent(this, MusicService::class.java), connection, Context.BIND_AUTO_CREATE)
@@ -102,10 +91,7 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         refreshMiniPlayer()
         MusicService.onStateChanged = { song, playing ->
-            runOnUiThread {
-                updateMiniPlayer(song, playing)
-                adapter.notifyDataSetChanged()
-            }
+            runOnUiThread { updateMiniPlayer(song, playing) }
         }
     }
 
@@ -129,39 +115,39 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-class SongAdapter(
-    private val songs: List<UltramanSong>,
-    private val onClick: (UltramanSong) -> Unit
-) : RecyclerView.Adapter<SongAdapter.VH>() {
+class CharacterAdapter(
+    private val characters: List<UltramanCharacter>,
+    private val onClick: (UltramanCharacter) -> Unit
+) : RecyclerView.Adapter<CharacterAdapter.VH>() {
 
     inner class VH(view: View) : RecyclerView.ViewHolder(view) {
-        val card: CardView     = view.findViewById(R.id.songCard)
-        val number: TextView   = view.findViewById(R.id.songNumber)
-        val title: TextView    = view.findViewById(R.id.songTitle)
-        val artist: TextView   = view.findViewById(R.id.songArtist)
-        val series: TextView   = view.findViewById(R.id.songSeries)
-        val year: TextView     = view.findViewById(R.id.songYear)
-        val strip: View        = view.findViewById(R.id.colorStrip)
+        val card: CardView   = view.findViewById(R.id.songCard)
+        val number: TextView = view.findViewById(R.id.songNumber)
+        val title: TextView  = view.findViewById(R.id.songTitle)
+        val artist: TextView = view.findViewById(R.id.songArtist)
+        val series: TextView = view.findViewById(R.id.songSeries)
+        val year: TextView   = view.findViewById(R.id.songYear)
+        val strip: View      = view.findViewById(R.id.colorStrip)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         VH(LayoutInflater.from(parent.context).inflate(R.layout.item_song, parent, false))
 
-    override fun getItemCount() = songs.size
+    override fun getItemCount() = characters.size
 
     override fun onBindViewHolder(h: VH, pos: Int) {
-        val song = songs[pos]
-        val isCurrent = MusicService.currentSong?.id == song.id
-        h.number.text  = "%02d".format(pos + 1)
-        h.title.text   = song.title
-        h.artist.text  = song.artist
-        h.series.text  = song.series
-        h.year.text    = song.year.toString()
-        try { h.strip.setBackgroundColor(Color.parseColor(song.color)) } catch (_: Exception) {}
-        h.card.cardElevation = if (isCurrent) 12f else 4f
+        val character = characters[pos]
+        val isCurrentSeries = MusicService.currentSong?.series == character.series
+        h.number.text = "%02d".format(pos + 1)
+        h.title.text  = character.name
+        h.artist.text = "${character.songs.size} song${if (character.songs.size > 1) "s" else ""}"
+        h.series.text = character.series
+        h.year.text   = character.year.toString()
+        try { h.strip.setBackgroundColor(Color.parseColor(character.color)) } catch (_: Exception) {}
+        h.card.cardElevation = if (isCurrentSeries) 12f else 4f
         h.title.setTextColor(
-            if (isCurrent) ContextCompat.getColor(h.itemView.context, R.color.ultraman_blue)
+            if (isCurrentSeries) ContextCompat.getColor(h.itemView.context, R.color.ultraman_blue)
             else ContextCompat.getColor(h.itemView.context, android.R.color.black))
-        h.card.setOnClickListener { onClick(song) }
+        h.card.setOnClickListener { onClick(character) }
     }
 }

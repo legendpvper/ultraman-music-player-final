@@ -33,6 +33,21 @@ class MusicService : Service() {
         var currentIndex: Int = 0
         var onStateChanged: ((UltramanSong, Boolean) -> Unit)? = null
         var onProgressUpdate: ((Int, Int) -> Unit)? = null  // current ms, total ms
+		// Queue
+		val queue: ArrayDeque<UltramanSong> = ArrayDeque()
+		var onQueueChanged: (() -> Unit)? = null
+
+		fun addToQueue(song: UltramanSong) {
+			queue.add(song)
+			onQueueChanged?.invoke()
+		}
+
+		fun removeFromQueue(index: Int) {
+			if (index in queue.indices) {
+				queue.removeAt(index)
+				onQueueChanged?.invoke()
+			}
+		}
     }
 
     inner class MusicBinder : Binder() {
@@ -134,9 +149,16 @@ class MusicService : Service() {
     }
 
     fun playNext() {
-        currentIndex = (currentIndex + 1) % songs.size
-        playSong(songs[currentIndex])
-    }
+		if (MusicService.queue.isNotEmpty()) {
+			val nextSong = MusicService.queue.removeFirst()
+			MusicService.currentIndex = songs.indexOf(nextSong)
+			MusicService.onQueueChanged?.invoke()
+			playSong(nextSong)
+		} else {
+			currentIndex = (currentIndex + 1) % songs.size
+			playSong(songs[currentIndex])
+		}
+	}
 
     fun playPrev() {
         // If more than 3 seconds in, restart current song; otherwise go to previous

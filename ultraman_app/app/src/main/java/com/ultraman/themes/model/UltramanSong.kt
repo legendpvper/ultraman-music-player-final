@@ -8,6 +8,7 @@ data class UltramanSong(
     val artist: String,
     val series: String,
     val year: Int,
-    val assetFileName: String,   // filename inside assets/ folder e.g. "01_ultraman_no_uta.mp3"
-    val color: String = "#1565C0"
+    val assetFileName: String,
+    val color: String = "#1565C0",
+    val songType: String = "Opening" // e.g. "Opening", "Ending"
 ) : Serializable

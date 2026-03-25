@@ -133,40 +133,94 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@android:color/white"
             android:paddingBottom="32dp"
-            android:paddingTop="16dp"
-            android:background="@android:color/white">
+            android:paddingTop="16dp">
 
-            <ImageButton
-                android:id="@+id/prevButton"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_prev"
-                android:tint="@color/ultraman_dark"
-                android:contentDescription="Previous"/>
+            <!-- Play controls row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
 
-            <ImageButton
-                android:id="@+id/playPauseButton"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:background="@drawable/circle_button_bg"
-                android:src="@drawable/ic_play_large"
-                android:tint="@android:color/white"
-                android:contentDescription="Play/Pause"/>
+                <ImageButton
+                    android:id="@+id/prevButton"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_prev"
+                    android:tint="@color/ultraman_dark"
+                    android:contentDescription="Previous"/>
 
-            <ImageButton
-                android:id="@+id/nextButton"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_next"
-                android:tint="@color/ultraman_dark"
-                android:contentDescription="Next"/>
+                <ImageButton
+                    android:id="@+id/playPauseButton"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/circle_button_bg"
+                    android:src="@drawable/ic_play_large"
+                    android:tint="@android:color/white"
+                    android:contentDescription="Play/Pause"/>
+
+                <ImageButton
+                    android:id="@+id/nextButton"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/ultraman_dark"
+                    android:contentDescription="Next"/>
+            </LinearLayout>
+
+            <!-- Queue controls row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+
+                <ImageButton
+                    android:id="@+id/addToQueueButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/ultraman_blue"
+                    android:contentDescription="Add to queue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="Add to Queue"
+                    android:textSize="12sp"
+                    android:textColor="@color/ultraman_blue"/>
+
+                <ImageButton
+                    android:id="@+id/viewQueueButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_next"
+                    android:tint="@color/ultraman_dark"
+                    android:contentDescription="View queue"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="View Queue"
+                    android:textSize="12sp"
+                    android:textColor="@color/ultraman_dark"/>
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

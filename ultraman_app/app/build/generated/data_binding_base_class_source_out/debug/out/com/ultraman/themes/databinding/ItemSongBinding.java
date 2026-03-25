@@ -4,6 +4,7 @@ package com.ultraman.themes.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -19,6 +20,9 @@ import java.lang.String;
 public final class ItemSongBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final ImageButton addToQueueButton;
 
   @NonNull
   public final View colorStrip;
@@ -41,10 +45,12 @@ public final class ItemSongBinding implements ViewBinding {
   @NonNull
   public final TextView songYear;
 
-  private ItemSongBinding(@NonNull LinearLayout rootView, @NonNull View colorStrip,
-      @NonNull TextView songArtist, @NonNull CardView songCard, @NonNull TextView songNumber,
-      @NonNull TextView songSeries, @NonNull TextView songTitle, @NonNull TextView songYear) {
+  private ItemSongBinding(@NonNull LinearLayout rootView, @NonNull ImageButton addToQueueButton,
+      @NonNull View colorStrip, @NonNull TextView songArtist, @NonNull CardView songCard,
+      @NonNull TextView songNumber, @NonNull TextView songSeries, @NonNull TextView songTitle,
+      @NonNull TextView songYear) {
     this.rootView = rootView;
+    this.addToQueueButton = addToQueueButton;
     this.colorStrip = colorStrip;
     this.songArtist = songArtist;
     this.songCard = songCard;
@@ -81,6 +87,12 @@ public final class ItemSongBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addToQueueButton;
+      ImageButton addToQueueButton = ViewBindings.findChildViewById(rootView, id);
+      if (addToQueueButton == null) {
+        break missingId;
+      }
+
       id = R.id.colorStrip;
       View colorStrip = ViewBindings.findChildViewById(rootView, id);
       if (colorStrip == null) {
@@ -123,8 +135,8 @@ public final class ItemSongBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemSongBinding((LinearLayout) rootView, colorStrip, songArtist, songCard,
-          songNumber, songSeries, songTitle, songYear);
+      return new ItemSongBinding((LinearLayout) rootView, addToQueueButton, colorStrip, songArtist,
+          songCard, songNumber, songSeries, songTitle, songYear);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

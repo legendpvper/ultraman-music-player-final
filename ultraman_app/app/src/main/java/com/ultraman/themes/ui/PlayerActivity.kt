@@ -8,6 +8,7 @@ import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.os.IBinder
+import android.widget.Toast
 import android.widget.SeekBar
 import androidx.appcompat.app.AppCompatActivity
 import com.ultraman.themes.R
@@ -58,7 +59,18 @@ class PlayerActivity : AppCompatActivity() {
         }
         binding.nextButton.setOnClickListener { musicService?.playNext() }
         binding.prevButton.setOnClickListener { musicService?.playPrev() }
+		
+		binding.addToQueueButton.setOnClickListener {
+			MusicService.currentSong?.let { song ->
+				MusicService.addToQueue(song)
+				Toast.makeText(this, "\"${song.title}\" added to queue", Toast.LENGTH_SHORT).show()
+			}
+		}
 
+		binding.viewQueueButton.setOnClickListener {
+			startActivity(Intent(this, QueueActivity::class.java))
+		}
+		
         binding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onStartTrackingTouch(sb: SeekBar?) { isSeeking = true }
             override fun onStopTrackingTouch(sb: SeekBar?) {

@@ -24,6 +24,9 @@ public final class ActivityPlayerBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
+  public final ImageButton addToQueueButton;
+
+  @NonNull
   public final TextView currentTimeText;
 
   @NonNull
@@ -59,14 +62,19 @@ public final class ActivityPlayerBinding implements ViewBinding {
   @NonNull
   public final TextView trackCounterText;
 
+  @NonNull
+  public final ImageButton viewQueueButton;
+
   private ActivityPlayerBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull TextView currentTimeText, @NonNull TextView durationText,
-      @NonNull ImageButton nextButton, @NonNull ImageButton playPauseButton,
-      @NonNull LinearLayout playerHeader, @NonNull Toolbar playerToolbar,
-      @NonNull ImageButton prevButton, @NonNull SeekBar seekBar, @NonNull TextView songArtistText,
-      @NonNull TextView songSeriesText, @NonNull TextView songTitleText,
-      @NonNull TextView trackCounterText) {
+      @NonNull ImageButton addToQueueButton, @NonNull TextView currentTimeText,
+      @NonNull TextView durationText, @NonNull ImageButton nextButton,
+      @NonNull ImageButton playPauseButton, @NonNull LinearLayout playerHeader,
+      @NonNull Toolbar playerToolbar, @NonNull ImageButton prevButton, @NonNull SeekBar seekBar,
+      @NonNull TextView songArtistText, @NonNull TextView songSeriesText,
+      @NonNull TextView songTitleText, @NonNull TextView trackCounterText,
+      @NonNull ImageButton viewQueueButton) {
     this.rootView = rootView;
+    this.addToQueueButton = addToQueueButton;
     this.currentTimeText = currentTimeText;
     this.durationText = durationText;
     this.nextButton = nextButton;
@@ -79,6 +87,7 @@ public final class ActivityPlayerBinding implements ViewBinding {
     this.songSeriesText = songSeriesText;
     this.songTitleText = songTitleText;
     this.trackCounterText = trackCounterText;
+    this.viewQueueButton = viewQueueButton;
   }
 
   @Override
@@ -108,6 +117,12 @@ public final class ActivityPlayerBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.addToQueueButton;
+      ImageButton addToQueueButton = ViewBindings.findChildViewById(rootView, id);
+      if (addToQueueButton == null) {
+        break missingId;
+      }
+
       id = R.id.currentTimeText;
       TextView currentTimeText = ViewBindings.findChildViewById(rootView, id);
       if (currentTimeText == null) {
@@ -180,9 +195,16 @@ public final class ActivityPlayerBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPlayerBinding((CoordinatorLayout) rootView, currentTimeText, durationText,
-          nextButton, playPauseButton, playerHeader, playerToolbar, prevButton, seekBar,
-          songArtistText, songSeriesText, songTitleText, trackCounterText);
+      id = R.id.viewQueueButton;
+      ImageButton viewQueueButton = ViewBindings.findChildViewById(rootView, id);
+      if (viewQueueButton == null) {
+        break missingId;
+      }
+
+      return new ActivityPlayerBinding((CoordinatorLayout) rootView, addToQueueButton,
+          currentTimeText, durationText, nextButton, playPauseButton, playerHeader, playerToolbar,
+          prevButton, seekBar, songArtistText, songSeriesText, songTitleText, trackCounterText,
+          viewQueueButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

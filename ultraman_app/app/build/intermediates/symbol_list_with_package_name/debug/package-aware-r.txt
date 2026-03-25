@@ -3174,6 +3174,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addToQueueButton
 id alertTitle
 id aligned
 id all
@@ -3283,6 +3284,7 @@ id edit_query
 id edit_text_id
 id elastic
 id embed
+id emptyQueueText
 id end
 id endToStart
 id end_padder
@@ -3477,10 +3479,16 @@ id pressed
 id prevButton
 id progress_circular
 id progress_horizontal
+id queueCard
+id queueColorStrip
+id queueRecyclerView
+id queueSongSeries
+id queueSongTitle
 id radio
 id ratio
 id rectangles
 id recyclerView
+id removeFromQueueButton
 id report_drawn
 id reverseSawtooth
 id right
@@ -3615,6 +3623,7 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id viewQueueButton
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3748,6 +3757,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_player
+layout activity_queue
+layout activity_song_list
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3766,6 +3777,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_queue
 layout item_song
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

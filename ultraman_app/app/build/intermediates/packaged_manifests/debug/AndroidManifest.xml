@@ -43,6 +43,14 @@
             android:name="com.ultraman.themes.ui.PlayerActivity"
             android:exported="false"
             android:parentActivityName="com.ultraman.themes.ui.MainActivity" />
+        <activity
+            android:name="com.ultraman.themes.ui.SongListActivity"
+            android:exported="false"
+            android:parentActivityName="com.ultraman.themes.ui.MainActivity" />
+        <activity
+            android:name="com.ultraman.themes.ui.QueueActivity"
+            android:exported="false"
+            android:parentActivityName="com.ultraman.themes.ui.PlayerActivity" />
 
         <service
             android:name="com.ultraman.themes.service.MusicService"

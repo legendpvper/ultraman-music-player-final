@@ -29,6 +29,16 @@
             android:exported="false"
             android:parentActivityName=".ui.MainActivity"/>
 
+		<activity
+			android:name=".ui.SongListActivity"
+			android:exported="false"
+			android:parentActivityName=".ui.MainActivity"/>
+
+		<activity
+			android:name=".ui.QueueActivity"
+			android:exported="false"
+			android:parentActivityName=".ui.PlayerActivity"/>
+			
         <service
             android:name=".service.MusicService"
             android:exported="false"
