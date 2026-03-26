@@ -13,6 +13,8 @@ import android.os.IBinder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -99,6 +101,21 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
         MusicService.onStateChanged = null
     }
+	
+	override fun onCreateOptionsMenu(menu: Menu): Boolean {
+		menuInflater.inflate(R.menu.main_menu, menu)
+		return true
+	}
+
+	override fun onOptionsItemSelected(item: MenuItem): Boolean {
+		return when (item.itemId) {
+			R.id.action_local_imports -> {
+				startActivity(Intent(this, LocalImportsActivity::class.java))
+				true
+			}
+			else -> super.onOptionsItemSelected(item)
+		}
+	}
 
     private fun refreshMiniPlayer() {
         val song = MusicService.currentSong

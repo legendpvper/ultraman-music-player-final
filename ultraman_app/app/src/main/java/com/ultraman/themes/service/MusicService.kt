@@ -48,6 +48,22 @@ class MusicService : Service() {
 				onQueueChanged?.invoke()
 			}
 		}
+		
+		fun addLocalSongToQueue(song: com.ultraman.themes.model.LocalSong) {
+			// We store local songs in queue as a special UltramanSong with id = -1
+			val tempSong = UltramanSong(
+				id            = -1,
+				title         = song.title,
+				artist        = song.artist,
+				series        = "Local Imports",
+				year          = 0,
+				assetFileName = song.uri,  // store URI here
+				color         = "#455A64"
+			)
+			queue.add(tempSong)
+			onQueueChanged?.invoke()
+		}
+		
     }
 
     inner class MusicBinder : Binder() {
@@ -148,12 +164,23 @@ class MusicService : Service() {
         }
     }
 
-    fun playNext() {
+	fun playNext() {
 		if (MusicService.queue.isNotEmpty()) {
 			val nextSong = MusicService.queue.removeFirst()
-			MusicService.currentIndex = songs.indexOf(nextSong)
 			MusicService.onQueueChanged?.invoke()
-			playSong(nextSong)
+			if (nextSong.id == -1) {
+				// It's a local song, play via URI
+				val localSong = com.ultraman.themes.model.LocalSong(
+					id     = nextSong.assetFileName,
+					title  = nextSong.title,
+					artist = nextSong.artist,
+					uri    = nextSong.assetFileName
+				)
+				playLocalSong(localSong)
+			} else {
+				MusicService.currentIndex = songs.indexOf(nextSong)
+				playSong(nextSong)
+			}
 		} else {
 			currentIndex = (currentIndex + 1) % songs.size
 			playSong(songs[currentIndex])
@@ -181,6 +208,50 @@ class MusicService : Service() {
     fun seekTo(ms: Int) {
         mediaPlayer?.seekTo(ms)
     }
+	
+	fun playLocalSong(song: com.ultraman.themes.model.LocalSong) {
+		stopMediaPlayer()
+		// Create a temporary UltramanSong to reuse existing UI/state
+		val tempSong = UltramanSong(
+			id            = -1,
+			title         = song.title,
+			artist        = song.artist,
+			series        = "Local Imports",
+			year          = 0,
+			assetFileName = "",
+			color         = "#455A64"
+		)
+		currentSong = tempSong
+		isPlaying = false
+		try {
+			val uri = android.net.Uri.parse(song.uri)
+			mediaPlayer = MediaPlayer().apply {
+				setAudioAttributes(
+					android.media.AudioAttributes.Builder()
+						.setUsage(android.media.AudioAttributes.USAGE_MEDIA)
+						.setContentType(android.media.AudioAttributes.CONTENT_TYPE_MUSIC)
+						.build()
+				)
+				setDataSource(applicationContext, uri)
+				prepare()
+				start()
+				setOnCompletionListener {
+					if (MusicService.queue.isNotEmpty()) {
+						playNext()
+					} else {
+						MusicService.isPlaying = false
+						MusicService.onStateChanged?.invoke(tempSong, false)
+					}
+				}
+			}
+			isPlaying = true
+			onStateChanged?.invoke(tempSong, true)
+			startForeground(NOTIFICATION_ID, buildNotification(tempSong, true))
+			startProgressUpdates()
+		} catch (e: Exception) {
+			e.printStackTrace()
+		}
+	}
 
     fun getCurrentPosition(): Int = mediaPlayer?.currentPosition ?: 0
     fun getDuration(): Int = mediaPlayer?.duration ?: 0

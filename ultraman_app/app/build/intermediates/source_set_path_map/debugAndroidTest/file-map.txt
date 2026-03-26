@@ -1,0 +1,4 @@
+com.ultraman.themes.test.app-androidTest-0 C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\build\generated\res\resValues\androidTest\debug
+com.ultraman.themes.test.app-mergeDebugAndroidTestResources-1 C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.ultraman.themes.test.app-mergeDebugAndroidTestResources-2 C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.ultraman.themes.test.app-merged_res-3 C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\build\intermediates\merged_res\debugAndroidTest

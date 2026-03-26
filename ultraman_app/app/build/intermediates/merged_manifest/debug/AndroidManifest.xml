@@ -12,7 +12,11 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    android:maxSdkVersion="32"/>
     <permission
         android:name="com.ultraman.themes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -56,6 +60,11 @@
             android:name="com.ultraman.themes.service.MusicService"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback" />
+
+        <activity
+            android:name="com.ultraman.themes.ui.LocalImportsActivity"
+            android:exported="false"
+            android:parentActivityName="com.ultraman.themes.ui.MainActivity" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

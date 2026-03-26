@@ -3165,6 +3165,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_local_imports
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
@@ -3174,6 +3175,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addSongFab
 id addToQueueButton
 id alertTitle
 id aligned
@@ -3285,6 +3287,7 @@ id edit_text_id
 id elastic
 id embed
 id emptyQueueText
+id emptyText
 id end
 id endToStart
 id end_padder
@@ -3352,6 +3355,12 @@ id line3
 id linear
 id listMode
 id list_item
+id localAddToQueueButton
+id localDeleteButton
+id localSongArtist
+id localSongCard
+id localSongTitle
+id localSongsRecyclerView
 id m3_side_sheet
 id marquee
 id masked
@@ -3755,6 +3764,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_local_imports
 layout activity_main
 layout activity_player
 layout activity_queue
@@ -3777,6 +3787,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_local_song
 layout item_queue
 layout item_song
 layout m3_alert_dialog
@@ -3849,7 +3860,9 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu main_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

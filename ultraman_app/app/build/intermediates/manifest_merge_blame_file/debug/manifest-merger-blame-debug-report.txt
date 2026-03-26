@@ -20,154 +20,172 @@
 14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 14-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:7:5-76
 14-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:7:22-74
-15
-16    <permission
-16-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
-17        android:name="com.ultraman.themes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-17-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
-18        android:protectionLevel="signature" />
-18-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
-19
-20    <uses-permission android:name="com.ultraman.themes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-20-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
-20-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
-21
-22    <application
-22-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:9:5-47:19
-23        android:allowBackup="true"
-23-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:10:9-35
-24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-24-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
-25        android:debuggable="true"
-26        android:extractNativeLibs="false"
-27        android:hardwareAccelerated="true"
-27-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:16:9-43
-28        android:icon="@mipmap/ic_launcher"
-28-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:11:9-43
-29        android:label="@string/app_name"
-29-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:12:9-41
-30        android:roundIcon="@mipmap/ic_launcher_round"
-30-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:13:9-54
-31        android:supportsRtl="true"
-31-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:14:9-35
-32        android:theme="@style/Theme.UltramanThemes" >
-32-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:15:9-52
-33        <activity
-33-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:18:9-25:20
-34            android:name="com.ultraman.themes.ui.MainActivity"
-34-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:19:13-44
-35            android:exported="true" >
-35-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:20:13-36
-36            <intent-filter>
-36-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:21:13-24:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:22:17-68
-37-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:22:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:23:17-76
-39-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:23:27-74
-40            </intent-filter>
-41        </activity>
-42        <activity
-42-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:27:9-30:60
-43            android:name="com.ultraman.themes.ui.PlayerActivity"
-43-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:28:13-46
-44            android:exported="false"
-44-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:29:13-37
-45            android:parentActivityName="com.ultraman.themes.ui.MainActivity" />
-45-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:30:13-58
+15    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+15-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:8:2-71
+15-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:8:19-69
+16    <uses-permission
+16-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:9:2-10:31
+17        android:name="android.permission.READ_EXTERNAL_STORAGE"
+17-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:9:19-74
+18        android:maxSdkVersion="32" />
+18-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:10:3-29
+19    android:maxSdkVersion="32"/>
+20    <permission
+20-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+21        android:name="com.ultraman.themes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+21-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+22        android:protectionLevel="signature" />
+22-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+23
+24    <uses-permission android:name="com.ultraman.themes.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+24-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+24-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+25
+26    <application
+26-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:13:5-56:19
+27        android:allowBackup="true"
+27-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:14:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.12.0] C:\Users\Reuben\.gradle\caches\transforms-3\97e765d7646eda9d89caa6262cf470cb\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+31        android:hardwareAccelerated="true"
+31-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:20:9-43
+32        android:icon="@mipmap/ic_launcher"
+32-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:15:9-43
+33        android:label="@string/app_name"
+33-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:16:9-41
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:17:9-54
+35        android:supportsRtl="true"
+35-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:18:9-35
+36        android:theme="@style/Theme.UltramanThemes" >
+36-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:19:9-52
+37        <activity
+37-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:22:9-29:20
+38            android:name="com.ultraman.themes.ui.MainActivity"
+38-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:23:13-44
+39            android:exported="true" >
+39-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:24:13-36
+40            <intent-filter>
+40-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:25:13-28:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:26:17-68
+41-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:26:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:27:17-76
+43-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:27:27-74
+44            </intent-filter>
+45        </activity>
 46        <activity
-46-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:32:3-35:51
-47            android:name="com.ultraman.themes.ui.SongListActivity"
-47-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:33:4-39
+46-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:31:9-34:60
+47            android:name="com.ultraman.themes.ui.PlayerActivity"
+47-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:32:13-46
 48            android:exported="false"
-48-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:34:4-28
+48-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:33:13-37
 49            android:parentActivityName="com.ultraman.themes.ui.MainActivity" />
-49-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:35:4-49
+49-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:34:13-58
 50        <activity
-50-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:37:3-40:53
-51            android:name="com.ultraman.themes.ui.QueueActivity"
-51-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:38:4-36
+50-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:36:3-39:51
+51            android:name="com.ultraman.themes.ui.SongListActivity"
+51-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:37:4-39
 52            android:exported="false"
-52-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:39:4-28
-53            android:parentActivityName="com.ultraman.themes.ui.PlayerActivity" />
-53-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:40:4-51
-54
-55        <service
-55-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:42:9-45:60
-56            android:name="com.ultraman.themes.service.MusicService"
-56-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:43:13-49
-57            android:exported="false"
-57-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:44:13-37
-58            android:foregroundServiceType="mediaPlayback" />
-58-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:45:13-58
-59
-60        <provider
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-61            android:name="androidx.startup.InitializationProvider"
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-62            android:authorities="com.ultraman.themes.androidx-startup"
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-63            android:exported="false" >
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-64            <meta-data
-64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-66                android:value="androidx.startup" />
-66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-67            <meta-data
-67-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Reuben\.gradle\caches\transforms-3\c3f432f8e29f60e3d52e5080e97a930f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Reuben\.gradle\caches\transforms-3\c3f432f8e29f60e3d52e5080e97a930f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-69                android:value="androidx.startup" />
-69-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Reuben\.gradle\caches\transforms-3\c3f432f8e29f60e3d52e5080e97a930f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-70            <meta-data
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-71                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-72                android:value="androidx.startup" />
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-73        </provider>
-74
-75        <receiver
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-76            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-77            android:directBootAware="false"
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-78            android:enabled="true"
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-79            android:exported="true"
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-80            android:permission="android.permission.DUMP" >
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-82                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-83            </intent-filter>
-84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-85                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-86            </intent-filter>
-87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-88                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-89            </intent-filter>
+52-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:38:4-28
+53            android:parentActivityName="com.ultraman.themes.ui.MainActivity" />
+53-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:39:4-49
+54        <activity
+54-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:41:3-44:53
+55            android:name="com.ultraman.themes.ui.QueueActivity"
+55-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:42:4-36
+56            android:exported="false"
+56-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:43:4-28
+57            android:parentActivityName="com.ultraman.themes.ui.PlayerActivity" />
+57-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:44:4-51
+58
+59        <service
+59-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:46:9-49:60
+60            android:name="com.ultraman.themes.service.MusicService"
+60-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:47:13-49
+61            android:exported="false"
+61-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:48:13-37
+62            android:foregroundServiceType="mediaPlayback" />
+62-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:49:13-58
+63
+64        <activity
+64-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:51:3-54:51
+65            android:name="com.ultraman.themes.ui.LocalImportsActivity"
+65-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:52:4-43
+66            android:exported="false"
+66-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:53:4-28
+67            android:parentActivityName="com.ultraman.themes.ui.MainActivity" />
+67-->C:\Users\Reuben\Downloads\ultraman-music-player\ultraman_app\app\src\main\AndroidManifest.xml:54:4-49
+68
+69        <provider
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+70            android:name="androidx.startup.InitializationProvider"
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+71            android:authorities="com.ultraman.themes.androidx-startup"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+72            android:exported="false" >
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+73            <meta-data
+73-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+74-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+75                android:value="androidx.startup" />
+75-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Reuben\.gradle\caches\transforms-3\c133076759b52016ddca60deafee891e\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Reuben\.gradle\caches\transforms-3\c3f432f8e29f60e3d52e5080e97a930f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Reuben\.gradle\caches\transforms-3\c3f432f8e29f60e3d52e5080e97a930f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\Reuben\.gradle\caches\transforms-3\c3f432f8e29f60e3d52e5080e97a930f\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+81                android:value="androidx.startup" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+82        </provider>
+83
+84        <receiver
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+85            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+86            android:directBootAware="false"
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+87            android:enabled="true"
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+88            android:exported="true"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+89            android:permission="android.permission.DUMP" >
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
 90            <intent-filter>
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-91                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+91                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
 92            </intent-filter>
-93        </receiver>
-94    </application>
-95
-96</manifest>
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+94                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+97                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+100                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Reuben\.gradle\caches\transforms-3\fbcd25180d83b247b71d3d89a9430881\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+101            </intent-filter>
+102        </receiver>
+103    </application>
+104
+105</manifest>

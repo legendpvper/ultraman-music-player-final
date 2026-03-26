@@ -4,7 +4,7 @@ object SongRepository {
 
     val songs: List<UltramanSong> = listOf(
         // ── Ultraman (1966) ──
-        UltramanSong(1,  "Ultraman no Uta",          "Mitsuko Horie",       "Ultraman",            1966, "01_ultraman_no_uta.mp3",      "#B71C1C", "Opening"),
+        UltramanSong(1,  "Ultraman Zoffy Opening",    "Mitsuko Horie",       "Ultraman",            1966, "01_ultraman_no_uta.mp3",      "#B71C1C", "Opening"),
         UltramanSong(33, "Susume! Ultraman",          "Mitsuko Horie",       "Ultraman",            1966, "33_ultraman_ed.mp3",          "#B71C1C", "Ending"),
 
         // ── Ultraseven (1967) ──
@@ -37,7 +37,7 @@ object SongRepository {
         // ── Ultraman Tiga (1996) ──
         UltramanSong(9,  "Take Me Higher",            "V6",                  "Ultraman Tiga",       1996, "09_take_me_higher.mp3",       "#0D47A1", "Opening"),
         UltramanSong(10, "Brave Love, TIGA",          "Chikyuu Bouei Dan",   "Ultraman Tiga",       1996, "10_brave_love_tiga.mp3",      "#1565C0", "Ending"),
-        UltramanSong(40, "Brave Love, TIGA (Full)",   "Chikyuu Bouei Dan",   "Ultraman Tiga",       1996, "40_ultraman_tiga_ed.mp3",     "#1565C0", "Ending"),
+        UltramanSong(40, "Shinin On Love",   		  "Chikyuu Bouei Dan",   "Ultraman Tiga",       1996, "40_ultraman_tiga_ed.mp3",     "#1565C0", "Ending"),
 
         // ── Ultraman Dyna (1997) ──
         UltramanSong(11, "Ultraman Dyna",             "Tatsuya Maeda",       "Ultraman Dyna",       1997, "11_ultraman_dyna.mp3",        "#6A1B9A", "Opening"),
@@ -45,12 +45,13 @@ object SongRepository {
 
         // ── Ultraman Gaia (1998) ──
         UltramanSong(12, "Ultraman Gaia!",            "Masayuki Tanaka",     "Ultraman Gaia",       1998, "12_ultraman_gaia.mp3",        "#00695C", "Opening"),
-        UltramanSong(42, "Lovin You Lovin Me",        "B.B. Waves",          "Ultraman Gaia",       1998, "42_ultraman_gaia_ed.mp3",     "#00695C", "Ending"),
+        UltramanSong(42, "Beat On Dream On",          "B.B. Waves",          "Ultraman Gaia",       1998, "42_ultraman_gaia_ed.mp3",     "#00695C", "Ending"),
 
         // ── Ultraman Cosmos (2001) ──
         UltramanSong(13, "Spirit",                    "Project D.M.M.",      "Ultraman Cosmos",     2001, "13_ultraman_cosmos.mp3",      "#01579B", "Opening"),
         UltramanSong(32, "Kimi ni Dekiru Nani ka",    "Project D.M.M.",      "Ultraman Cosmos",     2001, "32_ultraman_cosmos_ed.mp3",   "#01579B", "Ending"),
-        UltramanSong(59, "Ultraman Cosmos Ending 2",  "Project D.M.M.",      "Ultraman Cosmos",     2001, "59_ultraman_cosmos_ed_2.mp3", "#01579B", "Ending"),
+        UltramanSong(59, "Touch The Fire",  		  "Project D.M.M.",      "Ultraman Cosmos",     2001, "59_ultraman_cosmos_ed_2.mp3", "#01579B", "Ending"),
+        UltramanSong(60, "High Hope",  		  		  "Project D.M.M.",      "Ultraman Cosmos",     2001, "60_ultraman_cosmos_ed_3.mp3", "#01579B", "Ending"),
 
         // ── Ultraman: The Next (2004) ──
         UltramanSong(14, "Ultra Man Next",            "Yuji Shimomura",      "Ultraman: The Next",  2004, "14_ultraman_the_next.mp3",    "#37474F", "Opening"),
@@ -65,7 +66,7 @@ object SongRepository {
 
         // ── Ultraman Mebius (2006) ──
         UltramanSong(17, "Ultraman Mebius",           "Voyager",             "Ultraman Mebius",     2006, "17_ultraman_mebius.mp3",      "#1A237E", "Opening"),
-        UltramanSong(45, "Ultraman Mebius Ending",    "Voyager",             "Ultraman Mebius",     2006, "45_ultraman_mebius_ed.mp3",   "#1A237E", "Ending"),
+        UltramanSong(45, "Miracle Of Ultra",    	  "Voyager",             "Ultraman Mebius",     2006, "45_ultraman_mebius_ed.mp3",   "#1A237E", "Ending"),
 
         // ── Ultraman Zero (2010) ──
         UltramanSong(18, "Ultraman Zero",             "Voyager",             "Ultraman Zero",       2010, "18_ultraman_zero.mp3",        "#0D47A1", "Opening"),
@@ -76,7 +77,7 @@ object SongRepository {
 
         // ── Ultraman Ginga (2013) ──
         UltramanSong(20, "Ultraman Ginga",            "Voyager",             "Ultraman Ginga",      2013, "20_ultraman_ginga.mp3",       "#4A148C", "Opening"),
-        UltramanSong(47, "Starlight",                 "Ultra Super Express",  "Ultraman Ginga",     2013, "47_ultraman_ginga_ed.mp3",    "#4A148C", "Ending"),
+        UltramanSong(47, "Kirameki Mirai no Ginga e", "Ultra Super Express",  "Ultraman Ginga",     2013, "47_ultraman_ginga_ed.mp3",    "#4A148C", "Ending"),
 
         // ── Ultraman Ginga S (2014) ──
         UltramanSong(21, "Ultraman Ginga S",          "Voyager",             "Ultraman Ginga S",    2014, "21_ultraman_ginga_s.mp3",     "#880E4F", "Opening"),
